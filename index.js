@@ -23,7 +23,9 @@ module.exports = {
               watch: [
                 'ember-cli-build.js',
                 '.jshintrc',
-                'tests/.jshintrc'
+                'tests/.jshintrc',
+                'package.json',
+                'bower.json'
               ]
             });
 

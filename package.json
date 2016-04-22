@@ -1,6 +1,6 @@
 {
   "name": "ember-autoserve",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Runs `ember serve` and will automatically restart it when necessary",
   "directories": {
     "doc": "doc",
