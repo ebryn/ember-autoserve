@@ -4,6 +4,7 @@
 var nodemon = require('nodemon');
 var Promise = require('ember-cli/lib/ext/promise');
 var path = require('path');
+var which = require('which');
 
 module.exports = {
   name: 'ember-autoserve',
@@ -18,8 +19,8 @@ module.exports = {
         run: function() {
           return new Promise(function(resolve, reject) {
             nodemon({
-              exec: '`which ember` serve',
-              // execArgs: ['serve'],
+              exec: which.sync('ember'),
+              args: ['serve'],
               watch: [
                 'ember-cli-build.js',
                 '.jshintrc',

@@ -1,6 +1,6 @@
 {
   "name": "ember-autoserve",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Runs `ember serve` and will automatically restart it when necessary",
   "directories": {
     "doc": "doc",
@@ -44,7 +44,8 @@
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.6",
-    "nodemon": "^1.9.1"
+    "nodemon": "^1.9.1",
+    "which": "^1.2.4"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
