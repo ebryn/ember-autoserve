@@ -1,26 +1,11 @@
-# Ember-autoserve
+# ember-autoserve
 
-This README outlines the details of collaborating on this Ember addon.
+Gone are the days of manually restarting `ember serve`!
 
-## Installation
+To install, run:
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+`ember install ember-autoserve`
 
-## Running
+Then, instead of running `ember serve`, run `ember autoserve` instead.
 
-* `ember server`
-* Visit your app at http://localhost:4200.
-
-## Running Tests
-
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+Your development server will be automatically restarted when `ember-cli-build.js`, `.jshintrc`, or when you install a new addon!

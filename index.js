@@ -16,11 +16,16 @@ module.exports = {
         description: 'Runs `ember serve` and will automatically restart it when necessary',
         works: 'insideProject',
 
-        run: function() {
+
+        validateAndRun: function(rawArgs) {
+          return this.run({}, rawArgs);
+        },
+
+        run: function(options, rawArgs) {
           return new Promise(function(resolve, reject) {
             nodemon({
               exec: which.sync('ember'),
-              args: ['serve'],
+              args: ['serve'].concat(rawArgs),
               watch: [
                 'ember-cli-build.js',
                 '.jshintrc',
