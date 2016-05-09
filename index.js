@@ -31,7 +31,8 @@ module.exports = {
                 '.jshintrc',
                 'tests/.jshintrc',
                 'package.json',
-                'bower.json'
+                'bower.json',
+                'index.js'
               ]
             });
 
